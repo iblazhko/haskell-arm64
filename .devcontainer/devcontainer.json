@@ -1,0 +1,14 @@
+{
+    "name": "Haskell 9.8",
+    "image": "docker.io/iblazhko/haskell-dev:9.8.1",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "haskell.haskell",
+                "eamodio.gitlens",
+                "editorconfig.editorconfig",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    }
+}

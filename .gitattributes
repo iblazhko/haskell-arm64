@@ -1,7 +1,6 @@
 * text=auto
 *.hs text
 *.md text
-*.py text eol=lf
 *.yml text
 *.yaml text
 *.git* text
