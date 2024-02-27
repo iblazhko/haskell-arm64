@@ -27,5 +27,5 @@ To build multi-platform image, use following command in `.devcontainer`:
 
 ```bash
 docker buildx create --name multiplatform --bootstrap --use
-docker buildx build --platform linux/amd64,linux/arm64 --push --tag iblazhko/haskell-dev:9.8.1 --tag iblazhko/haskell-dev:9.8 .
+docker buildx build --platform linux/amd64,linux/arm64 --push --tag iblazhko/haskell-dev:9.8.1 --tag iblazhko/haskell-dev:9.8 --tag iblazhko/haskell-dev:latest . 
 ```
