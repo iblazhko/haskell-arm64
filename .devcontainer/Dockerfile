@@ -41,6 +41,12 @@ RUN mkdir -p /home/haskell-dev/.config/cabal && \
     echo '' > /home/haskell-dev/.config/cabal/config && \
     ln -s /home/haskell-dev/.ghcup/bin/ghc-${GHC} /home/haskell-dev/.ghcup/bin/ghc && \
     ln -s /home/haskell-dev/.ghcup/bin/ghci-${GHC} /home/haskell-dev/.ghcup/bin/ghci && \
+    ln -s /home/haskell-dev/.ghcup/bin/haddoc-${GHC} /home/haskell-dev/.ghcup/bin/haddoc && \
+    ln -s /home/haskell-dev/.ghcup/bin/hp2ps-${GHC} /home/haskell-dev/.ghcup/bin/hp2ps && \
+    ln -s /home/haskell-dev/.ghcup/bin/hpc-${GHC} /home/haskell-dev/.ghcup/bin/hpc && \
+    ln -s /home/haskell-dev/.ghcup/bin/hsc2hs-${GHC} /home/haskell-dev/.ghcup/bin/hsc2hs && \
+    ln -s /home/haskell-dev/.ghcup/bin/runghc-${GHC} /home/haskell-dev/.ghcup/bin/runghc && \
+    ln -s /home/haskell-dev/.ghcup/bin/runhaskell-${GHC} /home/haskell-dev/.ghcup/bin/runhaskell && \
     /home/haskell-dev/.ghcup/bin/cabal update && \
     echo 'export PATH="$HOME/.ghcup/bin:$PATH"' >> /home/haskell-dev/.bashrc
 
