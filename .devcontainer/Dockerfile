@@ -38,7 +38,6 @@ RUN ghcup install ghc --force ${GHC} && \
     ghcup install hls --force ${HLS}
 
 RUN mkdir -p /home/haskell-dev/.config/cabal && \
-    echo '' > /home/haskell-dev/.config/cabal/config && \
     ln -s /home/haskell-dev/.ghcup/bin/ghc-${GHC} /home/haskell-dev/.ghcup/bin/ghc && \
     ln -s /home/haskell-dev/.ghcup/bin/ghci-${GHC} /home/haskell-dev/.ghcup/bin/ghci && \
     ln -s /home/haskell-dev/.ghcup/bin/haddoc-${GHC} /home/haskell-dev/.ghcup/bin/haddoc && \
